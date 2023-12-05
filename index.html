@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Email List</title>
+    <!--CDN font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!--/CDN font awesome-->
+    <!--file css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--/file css-->
+    <!--CDN axios-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!--/CDN axios-->
+</head>
+<body>
+    <!--vuejs workspace-->
+    <div id="app" v-cloak>
+        <h1>Lista Mails Api Boolean</h1>
+        <ul class="mails-list">
+            <!--elementi replicati per il numero di mail generate con il for-->
+            <li v-for="(mail, index) in mailsList" :class="mailSetting">
+                {{ mail }}
+                <i class="fa-regular fa-envelope"></i>
+            </li>
+            <!--/elementi replicati per il numero di mail generate con il for-->
+        </ul>
+    </div>
+    <!--/vuejs workspace-->
+
+    <!--CDN vuejs-->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!--/CDN vuejs-->
+    <!--file js-->
+    <script src="js/main.js"></script>
+    <!--/file js-->
+</body>
+</html>
