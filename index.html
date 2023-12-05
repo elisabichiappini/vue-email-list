@@ -26,6 +26,9 @@
             </li>
             <!--/elementi replicati per il numero di mail generate con il for-->
         </ul>
+        <div v-else :class="mailSetting">
+            <i class="fa-solid fa-hourglass-start"></i>
+        </div>
     </div>
     <!--/vuejs workspace-->
 

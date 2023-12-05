@@ -11,18 +11,18 @@ CSS
 [v-cloak] {
     display: none; 
 }
+
 h1 {
     font-family: Helvetica, sans-serif;
     color: rgb(255, 255, 255);
-    padding-bottom: 20px;
+    padding: 20px 0;
 }
 
 body {
     font-family: Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.25rem;
     text-align: center;
     height: 100vh;
-    background-color: rgb(147, 147, 147);
+    background-color: rgb(208, 208, 208);
 }
 
 .mails-list {
@@ -40,5 +40,6 @@ li {
 }
 
 .color {
-    color: rgb(104, 34, 171);
+    color: rgb(133, 56, 206);
 }
+
