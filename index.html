@@ -18,7 +18,7 @@
     <!--vuejs workspace-->
     <div id="app" v-cloak>
         <h1>Lista Mails Api Boolean</h1>
-        <ul class="mails-list">
+        <ul v-if="mailsList.length >= 10"class="mails-list">
             <!--elementi replicati per il numero di mail generate con il for-->
             <li v-for="(mail, index) in mailsList" :class="mailSetting">
                 {{ mail }}
